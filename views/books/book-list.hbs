@@ -1,0 +1,11 @@
+<h1>books</h1>
+
+{{#each books}}
+
+<div>
+    <h3>{{title}}</h3>
+    <p>By: {{author}}</p> {{!-- additional book property --}}
+    <a href="/books/{{_id}}">See details</a> {{!-- link that points to the details page --}}
+  </div>
+
+{{/each}}
