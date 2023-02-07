@@ -5,7 +5,11 @@
 <div>
     <h3>{{title}}</h3>
     <p>By: {{author}}</p> {{!-- additional book property --}}
-    <a href="/books/{{_id}}">See details</a> {{!-- link that points to the details page --}}
+    <a href="/books/details/{{_id}}">See details</a> {{!-- link that points to the details page --}}
+        <a href="/books/edit/{{_id}}">Edit</a> {{!-- link to redirect to the edit form for each specific book  --}}
+ <form action="/books/delete/{{_id}}" method="POST">
+      <button>Delete</button>
+    </form>
   </div>
 
 {{/each}}
